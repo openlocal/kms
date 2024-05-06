@@ -61,6 +61,12 @@ inside the container, simply run the following command:
 docker run -p 9998:9998 --name kms ghcr.io/cosmian/kms:4.16.0
 ```
 
+or on ARM64 machines such as Apple Silicon Macs:
+
+```sh
+docker run -p 9998:9998 --name kms --platform linux/x86_64/v8  ghcr.io/cosmian/kms:4.16.0
+```
+
 See the [documentation](https://docs.cosmian.com/cosmian_key_management_system/) for more.
 
 ## Repository content
